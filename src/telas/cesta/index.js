@@ -22,3 +22,4 @@ const estilos = StyleSheet.create({
         paddingVertical: 8
     }
 });
+
