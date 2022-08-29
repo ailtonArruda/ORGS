@@ -8,8 +8,10 @@ export default function Texto({ style, children }){
     if (style?.fontWeight === "bold"){
         estilo = estilos.textoNegrito;
     }
-
-    return <Text style={[style, estilo]}>{ children }</Text>
+    // array de estilos
+    return  <Text style={[style, estilo]}>
+                { children }
+            </Text>
 }
 
 const estilos = StyleSheet.create({
