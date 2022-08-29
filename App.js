@@ -25,8 +25,8 @@ export default function App() {
       return null;
     }
 
-  return (
-    <SafeAreaView onLayout={onLayoutRootView}>
+  return (                                    //carregar só o que está visivel na tela
+    <SafeAreaView onLayout={onLayoutRootView} style={{ flex: 1}}>
       <StatusBar/>
       <Cesta {...mock}/>      
     </SafeAreaView>
